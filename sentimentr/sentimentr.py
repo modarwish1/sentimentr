@@ -392,7 +392,9 @@ class Sentiment:
                             word_polarity = word_polarity * 1.5
                             if v: print("-> lengthening detected on {}. Word normalized to {}. Word polarity boosted to +{}. ".format(lengthened_word, word, word_polarity))
                         
-                        # get exclamation score and boost word_polarity 
+                        # get exclamation score and boost word_polarity
+                        if exclamation_score is None:
+                            exclamation_score = 1
                         if exclamation_score > 1:
                             word_polarity = word_polarity * exclamation_score
                             if v: print("-> {} exclamations detected near {}. Word polarity boosted to +{}.".format(exclamation_count, word, round(word_polarity, 3)))
@@ -477,7 +479,9 @@ class Sentiment:
                             word_polarity = word_polarity * 1.5
                             if v: print("-> lengthening detected on {}. Word normalized to {}. Word polarity boosted to {}. ".format(lengthened_word, word, word_polarity))
     
-                        # get exclamation score and boost word_polarity 
+                        # get exclamation score and boost word_polarity
+                        if exclamation_score is None:
+                            exclamation_score = 1        
                         if exclamation_score > 1:
                             word_polarity = word_polarity * exclamation_score
                             if v: print("-> {} exclamations detected near {}. Word polarity boosted to {}.".format(exclamation_count, word, round(word_polarity, 3)))                   
