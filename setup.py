@@ -2,7 +2,7 @@ from distutils.core import setup
 setup(
   name = 'sentimentr',       
   packages = ['sentimentr'],   
-  version = '1',
+  version = '1.0',
   package_data = {'sentimentr': ['lexica/*.txt']},  
   license='MIT',        
   description = 'Context-aware sentiment analysis model for formal and informal social media-style parlance',   
