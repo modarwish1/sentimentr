@@ -1,7 +1,6 @@
-# sentimentr
-
 # DESCRIPTION
 
+## sentimentr
 **sentimentr** is a linguistic-based sentiment analysis model for formal and informal social media-style parlance. It operates at the fine-grained subsentence (clause) level. It is accompanied with strength-assigned sentiment lexica, whereby each word in a subsentence that matches with the lexica is assigned with its prior polarity score (i.e. strength). It employs a series of formal (*contrasting connectors*, *irrealis markers*, _intensification_, _diminishment_ and _negation_) and informal (_emphatic uppercasing_, _lengthening_, _exclamation marks use_, and _adjacent polar words use_) context-aware syntactic rules that refine the polarity scores of matched words. The model is thus highly sensitive to changes in polarity strength at the lexical and syntactic level, and effectively measures the global polarity strength underlying a given text  in the range of [+1, -1]. The model is lightweight, practical and computationally efficient, making it ideal for real-time processing of large-scale text streams.
 
 ## Sentiment Lexica and resources
