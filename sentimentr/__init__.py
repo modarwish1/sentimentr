@@ -1,0 +1,1 @@
+from sentimentr.sentimentr import Sentiment
